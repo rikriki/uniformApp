@@ -1,6 +1,7 @@
 {
     "name": "uniformApp",
     "version": "0.0.1",
+    "main": "dist/",
     "ignore": [
         "bower_components",
         "fonts",
