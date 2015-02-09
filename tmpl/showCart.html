@@ -1,0 +1,33 @@
+<md-dialog aria-label="showCart">
+  <md-subheader class="md-sticky-no-effect ngdialog-header">
+      <div class="ngdialog-header">
+      <md-button ng-click="close()" class="md-accent md-raised">
+              Cancel
+      </md-button>
+         Review your order 
+         <md-button ng-click="next()" class="md-primary md-raised">
+              Next
+      </md-button>
+         
+      </div>
+  </md-subheader>
+  <md-content class="cartItem">
+        <div >          
+        </div>
+        <div data-ng-repeat="data in items" class="ngdialog-list" layout="row" layout-wrap>
+          <div  flex="80">
+            {{data.name}}
+          </div>
+          <div  flex="10">
+            <md-input-container flex class="ngdialog-input">
+              <input ng-model="data.quantity" class="cartItem">
+            </md-input-container>
+          </div>
+          <div  flex="10">
+              <button  type="button" data-ng-click="removeItem(data,$index)" class=" ngDialog-trash typcn typcn-shopping-cart" data-toggle="collapse" data-effect="st-effect-3" data-target=".navbar-collapse" class="cartItem">
+              </button>
+          </div>
+        </div>
+  </md-content>
+</md-dialog>
+

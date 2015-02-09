@@ -1,0 +1,34 @@
+<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+          
+          <md-content ng-controller="RightCtrl" class="md-padding uniform">
+            
+                  <md-button ng-click="close()" class="md-primary">
+                    Close
+                  </md-button>
+                  <div id="itemName">
+                    <div class="imgHolder"></div>
+                    <div class="imgName">
+                      {{inventory.itemName}}{{riki}}
+                    </div>
+                  </div>
+                  <p class="itemDate">
+                    Date Issued: 20-Feb 2011
+                    Valid until: 20-Feb 2011
+                  </p>
+
+                  <p class="itemDescription">
+                    Lorem ipsum dolor est generetum est salum Lorem ipsum dolor est generetum est salum
+                  </p>
+
+                  <div id="itemDropdown">
+                    <div>Add this item to cart</div>
+                    <div class="dropdown">
+                      <bs-dropdown data-menu-type="button" select-val="selected_status = selectedVal"
+                     preselected-item="1" data-dropdown-data="statuses"></bs-dropdown>  
+                    </div>  
+                    <div><button class="reserveNow typcn typcn-shopping-cart" ng-click="addItems(inventory,selected_status)"></button></div>
+                  </div>
+          </md-content>
+        </md-sidenav>
+
+                  

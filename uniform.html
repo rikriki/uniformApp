@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="uniform.css">
+    <link rel="stylesheet" href="typicons.css">
+</head>
+    <body ng-app="YourApp">
+	<div ng-controller="AppCtrl" layout="column" layout-fill>
+		<div class="navbar-header" layout="row" layout-wrap>
+			<div  flex="10">
+				<button id="st-trigger-effects" type="button" data-ng-click="toggleLeft()" class="navbar-toggle" data-toggle="collapse" data-effect="st-effect-3" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div flex="80">
+				<span class="navbar-brand" href="#">My Uniform</span>
+			</div>
+			<div flex="10">
+				<button  type="button" data-ng-click="showCart(cartItems)" class="navbar-cart typcn typcn-shopping-cart" data-toggle="collapse" data-effect="st-effect-3" data-target=".navbar-collapse">
+					<span id="item">{{cartItems.length}}</span>
+				</button>
+			</div>
+		</div>
+
+		<section layout="row" flex class="content">
+		 	<div data-ng-include="LeftBarSrc"></div>
+		   
+		    <md-content flex >
+		      <div layout="column" layout-fill>
+		        
+		       
+		        <div data-ng-view="" class="ngViewed">
+						<!-- main content start here -->
+				</div>
+
+		      </div>
+		    </md-content>
+		    <div data-ng-include="RightBarSrc"></div>
+		    
+		</section>
+	</div><!-- /AppCtrl -->
+
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="../js/lib/angular-route.min.js"></script>
+    <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  
+    <script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script src="controller.js"></script>
+
+    <script>
+
+    
+
+
+    </script>
+
+</body>
+</html>	

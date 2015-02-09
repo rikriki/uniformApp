@@ -1,0 +1,24 @@
+ <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" >
+           <md-toolbar class="md-theme-light">
+            <h1 class="md-toolbar-tools">Senior flight stewardess</h1>
+          </md-toolbar>
+          <md-content class="md-padding st-menu" ng-controller="LeftCtrl">
+            <md-button ng-click="close()" class="md-primary">
+              Close Sidenav Left
+            </md-button>
+            <div id="profile">
+            <img src="../images/profile_pic.jpg" />
+            <div class="profile_details">
+              <span id="employee-number">s374654</span>
+              <span id="employee-name">Tom Jones</span>
+            </div>
+          </div>
+          <ul id="menu-links">
+            <li><a class="typcn typcn-home-outline" href="#" ng-click="toggleNav()">Home</a></li>
+            <li><a class="typcn typcn-bell" href="" ng-click="notifications()" >Notifications</a></li>
+            <li><a class="typcn typcn-info-outline" href="#">Transaction History</a></li>
+            <li><a class="typcn typcn-stopwatch" href="#">UDC Collection Timings</a></li>
+            <li><a class="typcn typcn-eject-outline" href="#">Logout</a></li>
+          </ul>
+          </md-content>
+        </md-sidenav>

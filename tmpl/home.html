@@ -1,0 +1,22 @@
+            
+           <div layout="column">
+            <div id="st-inventory" class="main clearfix" ng-class="{'inventory-open':inventoryStatus}" >
+
+              <div class="uniform-title">
+                Uniform Items for:<br/>
+                <span>Grade 7 - Senior Flight Attendant</span>
+                {{inventory[0].itemName}}
+              </div>  
+              <div id="inventory" >
+                <a href="" class="typcnAfter typcn-arrow-rightAfter" ng-class="{active:selectedItem==inventory.itemName}" ng-click="toggleContent(inventory)" data-ng-repeat="inventory in inventories.items">
+
+                  {{inventory.itemName}}
+                  <div>
+                    <span ng-if="inventory.red.length>0" class="red typcn typcn-warning-outline"> {{inventory.red}}</span>
+                    <span ng-if="inventory.amber.length>0" class="amber typcn typcn-delete-outline"> {{inventory.amber}}</span></div>
+                </a>
+              </div>
+            </div><!-- /main -->
+          </div>
+
+

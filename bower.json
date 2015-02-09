@@ -1,0 +1,19 @@
+{
+    "name": "uniformApp",
+    "version": "0.0.1",
+    "ignore": [
+        "bower_components",
+        "fonts",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "angular-material": "latest",
+        "underscore": "~1.5.2"
+}
