@@ -16,4 +16,5 @@
     "dependencies": {
         "angular-material": "latest",
         "underscore": "~1.5.2"
+    }
 }
